@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background: #152036;
+    font-size: 62.5%; /* 10px */
+   }
+
+.main {    
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;    
+}
+
+.main h1 {
+   
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+.main .form .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.main .form .container input {
+    width: 600px;
+    height: 2.6rem;
+    outline: none;
+    border: 1px solid transparent;   
+    border-radius: 30px;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    color: #152036;
+    
+}
+.main .form .container input::placeholder {
+  
+    color: #152036;
+    
+}
+
+.main .form .container input:focus {
+    border: 1px solid #08cad8;
+}
+
+.main .form .container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 2.7rem;
+    background: #08cad8;
+    border: none;
+    color: #152036;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+}
+.main .form .container button:hover {
+    filter: brightness(1.2);
+}
+
+.main #toDoContainer li {
+    padding: .6rem 0 .6rem 20px;   
+    background: #08cad8;
+    border-radius: 30px;
+    list-style: none;    
+    font-size: 1rem;
+    color: #152036;
+    font-weight: 400; 
+    margin-bottom: 15px;   
+  
+}
+
+.main #toDoContainer li:hover {
+    filter: brightness(1.2);
+  
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .main .form .container input {
+        width: 300px;
+        
+        
+    }
+}
